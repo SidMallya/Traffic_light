@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<title>Traffic Lights</title>
+</head>
+
+<body>
+To play traffic light animation enter values for Speed Limit and Grade and click on Submit.<br/>
+<br/>
+<form name="inputform" action="play_animation.php" method="POST" >
+Speed Limit:<select name="speed_limit">
+<option value="0">Select</option>
+<option value="25">25</option>
+<option value="30">30</option>
+<option value="35">35</option>
+<option value="40">40</option>
+<option value="45">45</option>
+<option value="50">50</option>
+<option value="55">55</option>
+<option value="60">60</option>
+<option value="65">65</option>
+</select><br/>
+<br/>
+Grade = <input type="text" value="0"name="percent_grade" size="4"/> % (Uphill +ve, Downhill -ve) <br/>
+<br/>
+<input type="submit" value="Submit" ><br/>
+</form>
+Yellow light change intervals are computed using the below formula:
+<br/>
+<br/>
+<br/>
+<img src="images/formula.png"/><br/>
+<b>Reference:</b><a href="http://www.dot.state.fl.us/trafficoperations/Doc_Library/PDF/3%206r6_10.pdf">Standardization of Yellow and All-Red Intervals for Signalized Intersections</a><br/>
+</body>
+
+</html>
